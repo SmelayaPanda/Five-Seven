@@ -2,7 +2,13 @@ package com.company;
 
 import java.util.Random;
 
-public class Main {
+/**
+ * @author Azarov Alexey
+ * @since 31.05.16
+ */
+
+
+public class Start {
 
     public static void main(String[] args) {
         int one5 = 0;
@@ -29,7 +35,7 @@ public class Main {
         for (int i = 0; i < 7000000; i++) {
             a = random.nextInt(5) + 1;
 
-            //счетчики ранома из 5 чисел
+            //five's graph counter ( & = randomator)
             if (a == 1) one5++;
             else if (a == 2) two5++;
             else if (a == 3) three5++;
@@ -150,7 +156,7 @@ public class Main {
                     gr7 = 6;
                 }
             }
-            //счетчики выходных значений
+            //seven's graph counter
             if (gr7 == 1) one++;
             else if (gr7 == 2) two++;
             else if (gr7 == 3) three++;
