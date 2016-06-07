@@ -8,24 +8,23 @@ import java.util.logging.Logger;
 
 public class WriteNewTxt {
 
-
-    public static void writeWithTranslate(String fileName, String num) throws IOException {
+    public static void writeFile(String fileName, String num) throws IOException {
         Writer writer = null;
-         try {
+        try {
             writer = new FileWriter(fileName, true);
             writer.write(num);
-            writer.write(System.getProperty("line.separator"));
+            if (Counter.i == 2) {
+                writer.write(System.getProperty("line.separator"));
+                Counter.i = 0;
+            }
             writer.flush();
-
+            Counter.i++;
         } catch (Exception e) {
             Logger.getLogger(WriteNewTxt.class.getName()).log(Level.SEVERE, null, e);
-        } finally {
-            if (writer != null) {
-                try {
-                    writer.close();
-                } catch (IOException ex) {
-                }
-            }
         }
     }
+}
+
+class Counter {
+    public static int i=1;
 }
