@@ -33,7 +33,7 @@ public class Start {
         int a = 1;
 
         Random random = new Random();
-        for (int i = 0; i < 70000; i++) {
+        for (int i = 0; i < 700000; i++) {
             a = random.nextInt(5) + 1;
 
             String numbers = "C:\\Users\\Smela\\IdeaProjects\\Five-Seven\\src\\com\\company\\number.txt";
