@@ -1,4 +1,4 @@
-package com.company;
+package com.company.graph_variant;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

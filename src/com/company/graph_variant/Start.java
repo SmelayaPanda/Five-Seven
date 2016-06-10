@@ -1,4 +1,4 @@
-package com.company;
+package com.company.graph_variant;
 
 import java.io.IOException;
 import java.util.Random;

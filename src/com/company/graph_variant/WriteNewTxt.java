@@ -1,4 +1,4 @@
-package com.company;
+package com.company.graph_variant;
 
 import java.io.FileWriter;
 import java.io.IOException;
